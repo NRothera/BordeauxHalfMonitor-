@@ -13,7 +13,7 @@ export async function GET() {
   const html = await response.text()
 
   const registrationsOpen =
-    !html.toLowerCase().includes("registration coming soon")
+    !html.toLowerCase().includes("INSCRIPTION À VENIR")
 
   if (registrationsOpen) {
     await sendTelegramMessage(
