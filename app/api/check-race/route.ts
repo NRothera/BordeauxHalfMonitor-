@@ -1,4 +1,4 @@
-import { sendTelegramMessage } from "@/lib/sendTelegram"
+import { sendTelegramMessage } from "../../../lib/sendTelegram"
 
 const URL = "https://www.semi10kmdebordeaux.fr/"
 
