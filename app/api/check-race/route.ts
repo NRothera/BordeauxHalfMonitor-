@@ -1,6 +1,6 @@
 import { sendTelegramMessage } from "../../../lib/sendTelegram"
 
-const URL = "https://www.semi10kmdebordeaux.fr/"
+const URL = "https://www.semidebordeaux.fr/inscriptions-et-tarifs"
 
 export async function GET() {
   const response = await fetch(URL, {
@@ -17,7 +17,7 @@ export async function GET() {
 
   if (registrationsOpen) {
     await sendTelegramMessage(
-      "🏃 Bordeaux Half Marathon registrations are OPEN!"
+      "🏃 Bordeaux Half Marathon registrations are OPEN!! https://www.semidebordeaux.fr/inscriptions-et-tarifs "
     )
   }
 
